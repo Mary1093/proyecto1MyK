@@ -1,3 +1,3 @@
 # Estudiante: María López Valverde
-# link de Netlify: https://famous-zuccutto-be5ab2.netlify.app
+# link de Netlify: https://magnificent-snickerdoodle-faddd3.netlify.app/
 # Tarea 2
