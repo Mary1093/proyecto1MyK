@@ -5,73 +5,58 @@
         <title>Slack</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
-        <link rel="stylesheet" href="css/css.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <div class="nav-container container-fluid">
+        <div class="m-4">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                <img src="images/slack_icon_130829.png">
-                  <a class="navbar-brand" href="#">Slack</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#primerosPasos">Primeros pasos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#canales">Canales</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#mensajesDirectos">Mensajes directos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#llamadas">Llamadas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#notificar">Notificar a un canal</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#buscar">Buscar en Slack</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#sesion">Administrar la cuenta</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#roles">Roles y permisos</a>
-                      </li>
-                    </ul>
-                    
-                    <form class="d-flex">
-                        <button type="button" class="btn btn-success">Registrate</button>                       
-                      </form>
-                  </div>
+                    <img src="images/slack_icon_130829.png">
+                    <a class="navbar-brand" href="#">Slack</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#primerosPasos">Primeros pasos</a>
+                            <a class="nav-link active" aria-current="page" href="#canales">Canales</a>
+                            <a class="nav-link active" aria-current="page" href="#mensajesDirectos">Mensajes directos</a>
+                            <a class="nav-link active" aria-current="page" href="#llamadas">Llamadas</a>
+                            <a class="nav-link active" aria-current="page" href="#notificar">Notificar a un canal</a>
+                            <a class="nav-link active" aria-current="page" href="#buscar">Buscar en Slack</a>
+                            <a class="nav-link active" aria-current="page" href="#sesion">Administrar la cuenta</a>
+                            <a class="nav-link active" aria-current="page" href="#roles">Roles y permisos</a>
+                        </div>
+                        <div class="navbar-nav ms-auto">
+                            <a href="#" class="nav-item nav-link">Registrate</a>
+                        </div>
+                    </div>
                 </div>
-              </nav>
-
+            </nav>
         </div>
-        <hr>
+
         <main id="main-content" class="container-fluid ">
 
-            <section class="container" id="primerosPasos">    <!--primera seccion-->                 
-                <div class="row"  style="margin: 30px;">
+            <section class="container-fluid" id="primerosPasos">    <!--primera seccion-->                 
+                <div class="row container-fluid"  style="margin: 30px;">
                     <h1>¿Qué es Slack?</h1>        
-                    <div class="col"> <!--izq-->
+                    <div class="col container-fluid"> <!--izq-->
                         <p>Slack es una aplicación de mensajería para empresas 
                             que conecta a las personas con la información 
                             que necesitan. Slack transforma la manera 
                             en que se comunican las organizaciones 
                             reuniendo a las personas para que trabajen como un equipo unificado.
                         </p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q19RtuCHt1Q" 
-                        title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="80%" height="315" 
+                            src="https://www.youtube.com/embed/q19RtuCHt1Q" allowfullscreen>
+                            </iframe>
+                        </div>                    
 
                     </div>
-                    <div class="col"> <!--der-->
-                        <img src="images/gif-logo.gif" width="100%">
+                    <div class="col container-fluid"> <!--der-->
+                        <img class="container-fluid" src="images/gif-logo.gif" width="100%">
                     </div>
         
                 </div>
@@ -112,7 +97,7 @@
                 </div>
             </section>
             <hr>
-            <section  class="container" id="canales"><!--segunda seccion-->
+            <section  class="container-fluid" id="canales"><!--segunda seccion-->
                 
                 <div class="row"  style="margin: 30px;">
                     <div class="col"> <!--izq-->
@@ -141,7 +126,7 @@
                 </div>
             </section>
             <hr>
-            <section  class="container" id="mensajesDirectos"><!--tercera seccion-->               
+            <section  class="container-fluid" id="mensajesDirectos"><!--tercera seccion-->               
                 <div class="row" style="margin: 30px;">
                     <div class="col"> <!--izq-->
                         <h2>Cómo entender los mensajes directos</h2>
@@ -184,7 +169,7 @@
                 </div>
             </section>
             <hr>
-            <section  class="container" id="llamadas"><!--cuarta seccion-->               
+            <section  class="container-fluid" id="llamadas"><!--cuarta seccion-->               
                 <div class="row" style="margin: 30px;">
                     <div class="col"> <!--izq-->
                         <img src="images/call-phone.png" width="100%">
@@ -279,7 +264,7 @@
                 </div>
             </section>
             <hr>
-            <section  class="container" id="notificar"><!--quinta seccion-->               
+            <section  class="container-fluid" id="notificar"><!--quinta seccion-->               
                 <div class="row" style="margin: 30px;">
                     <div class="col"> <!--izq-->
                         <h2>Cómo notificar a un canal o espacio de trabajo</h2>
@@ -327,7 +312,7 @@
                 </div>
             </section>
             <hr>
-            <section  class="container" id="buscar"><!--sexta seccion-->               
+            <section  class="container-fluid" id="buscar"><!--sexta seccion-->               
                 <div class="row" style="margin: 30px;">
                     <div class="col"> <!--izq-->
                     </div>
@@ -341,16 +326,18 @@
                             búsquedas. Mira el video que aparece a continuación 
                             para obtener una breve descripción, luego continúa leyendo 
                             para obtener más información sobre la búsqueda.
-                        </p> 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oE5HriXDpC4" title="YouTube video player"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/oE5HriXDpC4" allowfullscreen>
                         </iframe>
+                        </div>  
+                        
                     </div>
                 </div>
             </section>
             <hr>
-            <section  class="container" id="sesion"><!--setima seccion-->               
+            <section  class="container-fluid" id="sesion"><!--setima seccion-->               
                 <div class="row" style="margin: 30px;">
                     <div class="col"> <!--izq-->
                         <img src="images/signin.png" width="100%"> 
@@ -396,7 +383,7 @@
                 </div>
             </section>            
             <hr>
-            <section  class="container" id="roles"><!--octava seccion-->               
+            <section  class="container-fluid" id="roles"><!--octava seccion-->               
                 <div class="row" style="margin: 30px;">
                     <div class="col"> <!--izq-->
                         <!-- <img src="images/signin.png" width="100%">  -->
