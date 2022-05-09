@@ -36,11 +36,17 @@
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#buscar">Buscar en Slack</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sesion">Administrar la cuenta</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#roles">Roles y permisos</a>
+                      </li>
                     </ul>
+                    
                     <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar en el Centro de ayuda" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                        <button type="button" class="btn btn-success">Registrate</button>                       
+                      </form>
                   </div>
                 </div>
               </nav>
@@ -343,11 +349,122 @@
                     </div>
                 </div>
             </section>
+            <hr>
+            <section  class="container" id="sesion"><!--setima seccion-->               
+                <div class="row" style="margin: 30px;">
+                    <div class="col"> <!--izq-->
+                        <img src="images/signin.png" width="100%"> 
+                    </div>
+                    <div class="col"> <!--der-->
 
-        
+                        <h2>Cómo iniciar sesión en Slack</h2>
+                        <p>
+                            Si eres miembro de uno o muchos 
+                            espacios de trabajo de Slack, puedes usar la 
+                            misma dirección de correo electrónico para iniciar 
+                            sesión en todos. Sigue leyendo para saber cómo iniciar 
+                            sesión en Slack con tu dirección de correo electrónico o tu cuenta de Apple o Google.
+                        </p> 
+                        <div class="border border-dark rounded-top rounded-bottom">                           
+                            <div class="col" style="margin: 10px;">
+                                <img src="images/pencil.png" style="float: left; width: 24px;">
+                                <p><strong>Nota:</strong> Si tu espacio de trabajo u 
+                                    organización Enterprise Grid exigen que utilices la 
+                                    autenticación de dos factores, necesitarás un código de 
+                                    autenticación de 6 dígitos para iniciar sesión.
+                                </p>
+                            </div>                                                     
+                        </div>
+                        <hr>
+                        <h2>Cómo iniciar sesión en tu espacio de trabajo</h2>
+                        <ul>
+                            <li style="margin: 5px;">Abre la aplicación de Slack para 
+                                computadora y haz clic en <strong>Iniciar sesión</strong>. Se te trasladará a tu 
+                                navegador web.
+                            </li>
+                            <li  style="margin: 5px;">Escribe tu dirección de correo electrónico 
+                                y haz clic en <strong>Iniciar sesión con el correo electrónico</strong>. En tu correo electrónico, busca el código de confirmación de Slack e ingrésalo.
+                            </li>
+                            <li  style="margin: 5px;">Si tu espacio de trabajo u organización 
+                                requiere que utilices el inicio de sesión único (SSO), autentícate 
+                                con el proveedor de SSO de tu empresa para terminar de iniciar sesión.
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </section>            
+            <hr>
+            <section  class="container" id="roles"><!--octava seccion-->               
+                <div class="row" style="margin: 30px;">
+                    <div class="col"> <!--izq-->
+                        <!-- <img src="images/signin.png" width="100%">  -->
+                        <h2>Tipos de roles en Slack</h2>
+                        <p>
+                            Los roles determinan lo que las personas pueden ver y 
+                            hacer en Slack. Hay roles administrativos que están diseñados para 
+                            las personas responsables de administrar cuentas y ajustes en Slack. Los 
+                            roles que no son administrativos permiten que las personas trabajen en Slack 
+                            y accedan a funciones clave. 
+                        </p> 
+                        <div class="border border-dark rounded-top rounded-bottom">                           
+                            <div class="col" style="margin: 10px;">
+                                <img src="images/pencil.png" style="float: left; width: 24px;">
+                                <p><strong>Nota:</strong> Obtén más información sobre permisos 
+                                    desglosados por tipo de rol en Slack. 
+                                </p>
+                            </div>                                                     
+                        </div>
+                        <hr>
+                        <h2>Roles en Slack</h2>
+                        <ul>
+                            <li style="margin: 5px;"><strong>Propietario principal del espacio de trabajo</strong><br>
+                                Un espacio de trabajo de Slack tiene un único propietario principal. 
+                                Solo esta persona puede eliminar el espacio de trabajo o transferir la propiedad a otra persona.
+                            </li>
+                            <li style="margin: 5px;"><strong>Propietarios del espacio de trabajo</strong><br>
+                                Los propietarios principales pueden asignar 
+                                propietarios del espacio de trabajo. Tienen el mismo 
+                                nivel de permisos que el propietario principal, pero no puede 
+                                eliminar el espacio de trabajo ni transferir su propiedad.
+                            </li>
+                            <li style="margin: 5px;"><strong>Administradores del espacio de trabajo</strong><br>
+                                Los propietarios del espacio de trabajo pueden asignar administradores 
+                                del espacio de trabajo. Ayudan en la administración de los miembros y 
+                                pueden realizar otras tareas administrativas.
+                            </li>
+                            <li style="margin: 5px;"><strong>Miembros plenos</strong><br>
+                                Los miembros tienen acceso para usar funciones en un espacio de trabajo 
+                                u organización de Slack, excepto aquellas que están limitadas solo a propietarios 
+                                y administradores.
+                            </li>
+                            <li style="margin: 5px;"><strong>Miembros invitados</strong><br>
+                                Los miembros invitados han sido invitados a participar en Slack, pero no han aceptado 
+                                la invitación. Las personas pueden agregarlos a los canales, 
+                                mencionarlos y enviarles mensajes directos, y recibirán notificaciones por 
+                                correo electrónico hasta que creen su cuenta.
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col"> <!--der--> 
+                    </div>
+                </div>
+            </section>       
         </main>
+       
         <footer class="py-3 my3">
             <p class="text-center text-muted">© 2022 Escuela de Informática, Lic</p>
+        </footer>
+        <footer class="d-flex flex-wrap justify-content-end align-content-center py-3 my-4 border-top">
+             <div>
+                <img src="images/face.png" style="width: 30px; cursor: pointer;" >
+                <img src="images/twitter-3_icon-icons.com_50735.png" style="width: 20px;cursor: pointer;">
+                <img src="images/yt.png" style="width: 30px;cursor: pointer;">
+                <img src="images/in.png" style="width: 20px;cursor: pointer;">
+             </div>    
+
         </footer>
 
     </body>
